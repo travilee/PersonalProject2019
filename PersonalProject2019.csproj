@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0D51761-8FDB-4AFE-9EB8-9AB5A11F87F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonalProject2019</RootNamespace>
+    <AssemblyName>PersonalProject2019</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aidsmemorial.html" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\fonts\api\easyshare.php" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\pe-icons.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\font-awesome-4.1.0\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.1.0\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="assets\img\about\1.jpg" />
+    <Content Include="assets\img\about\2.jpg" />
+    <Content Include="assets\img\about\3.jpg" />
+    <Content Include="assets\img\about\4.jpg" />
+    <Content Include="assets\img\bg - Copy\bg1.jpg" />
+    <Content Include="assets\img\bg - Copy\bg2.jpg" />
+    <Content Include="assets\img\bg - Copy\bg3.jpg" />
+    <Content Include="assets\img\bg - Copy\bg4.jpg" />
+    <Content Include="assets\img\bg - Copy\bg5.jpg" />
+    <Content Include="assets\img\bg - Copy\bg6.jpg" />
+    <Content Include="assets\img\bg - Copy\bg7.jpg" />
+    <Content Include="assets\img\bg - Copy\bg_bw1.jpg" />
+    <Content Include="assets\img\bg - Copy\bg_bw2.jpg" />
+    <Content Include="assets\img\bg\bg1.jpg" />
+    <Content Include="assets\img\bg\bg10.jpg" />
+    <Content Include="assets\img\bg\bg11.jpg" />
+    <Content Include="assets\img\bg\bg12.jpg" />
+    <Content Include="assets\img\bg\bg2.jpg" />
+    <Content Include="assets\img\bg\bg3.jpg" />
+    <Content Include="assets\img\bg\bg4.jpg" />
+    <Content Include="assets\img\bg\bg5.jpg" />
+    <Content Include="assets\img\bg\bg6.jpg" />
+    <Content Include="assets\img\bg\bg7.jpg" />
+    <Content Include="assets\img\bg\bg8.jpg" />
+    <Content Include="assets\img\bg\bg9.jpg" />
+    <Content Include="assets\img\bg\bg_bw1.jpg" />
+    <Content Include="assets\img\bg\bg_bw2.jpg" />
+    <Content Include="assets\img\bg\desktop.jpeg" />
+    <Content Include="assets\img\blog\blog1.jpg" />
+    <Content Include="assets\img\blog\blog10.jpg" />
+    <Content Include="assets\img\blog\blog2.jpg" />
+    <Content Include="assets\img\blog\blog3.jpg" />
+    <Content Include="assets\img\blog\blog4.jpg" />
+    <Content Include="assets\img\blog\blog5.jpg" />
+    <Content Include="assets\img\blog\blog6.jpg" />
+    <Content Include="assets\img\blog\blog7.jpg" />
+    <Content Include="assets\img\blog\blog8.jpg" />
+    <Content Include="assets\img\blog\blog9.jpg" />
+    <Content Include="assets\img\drag.png" />
+    <Content Include="assets\img\ico\apple-touch-icon-114x114.png" />
+    <Content Include="assets\img\ico\apple-touch-icon-144x144.png" />
+    <Content Include="assets\img\ico\apple-touch-icon-57x57.png" />
+    <Content Include="assets\img\ico\apple-touch-icon-72x72.png" />
+    <Content Include="assets\img\ico\apple-touch-icon.png" />
+    <Content Include="assets\img\ico\favicon.ico" />
+    <Content Include="assets\img\isometric-ipad-white.png" />
+    <Content Include="assets\img\large_logo.png" />
+    <Content Include="assets\img\loading.GIF" />
+    <Content Include="assets\img\logo\logo1.png" />
+    <Content Include="assets\img\logo\logo2.png" />
+    <Content Include="assets\img\logo\logo3.png" />
+    <Content Include="assets\img\logo\logo4.png" />
+    <Content Include="assets\img\logo\logo5.png" />
+    <Content Include="assets\img\logo\logo6.png" />
+    <Content Include="assets\img\logo\logo7.png" />
+    <Content Include="assets\img\logo\logo8.png" />
+    <Content Include="assets\img\map-image.png" />
+    <Content Include="assets\img\marker.GIF" />
+    <Content Include="assets\img\marker.png" />
+    <Content Include="assets\img\news\1.jpg" />
+    <Content Include="assets\img\news\10.jpg" />
+    <Content Include="assets\img\news\2.jpg" />
+    <Content Include="assets\img\news\3.jpg" />
+    <Content Include="assets\img\news\4.jpg" />
+    <Content Include="assets\img\news\5.jpg" />
+    <Content Include="assets\img\news\6.jpg" />
+    <Content Include="assets\img\news\7.jpg" />
+    <Content Include="assets\img\news\8.jpg" />
+    <Content Include="assets\img\news\9.jpg" />
+    <Content Include="assets\img\portfolio\portfolio1.jpg" />
+    <Content Include="assets\img\portfolio\portfolio10.jpg" />
+    <Content Include="assets\img\portfolio\portfolio11.jpg" />
+    <Content Include="assets\img\portfolio\portfolio12.jpg" />
+    <Content Include="assets\img\portfolio\portfolio2.jpg" />
+    <Content Include="assets\img\portfolio\portfolio3.jpg" />
+    <Content Include="assets\img\portfolio\portfolio4.jpg" />
+    <Content Include="assets\img\portfolio\portfolio5.jpg" />
+    <Content Include="assets\img\portfolio\portfolio6.jpg" />
+    <Content Include="assets\img\portfolio\portfolio7.jpg" />
+    <Content Include="assets\img\portfolio\portfolio8.jpg" />
+    <Content Include="assets\img\portfolio\portfolio9.jpg" />
+    <Content Include="assets\img\shop\product1.jpg" />
+    <Content Include="assets\img\shop\product2.jpg" />
+    <Content Include="assets\img\shop\shop1.jpg" />
+    <Content Include="assets\img\team\1.jpg" />
+    <Content Include="assets\img\team\2.jpg" />
+    <Content Include="assets\img\team\3.jpg" />
+    <Content Include="assets\img\team\4.jpg" />
+    <Content Include="assets\img\team\small1.jpg" />
+    <Content Include="assets\img\team\small2.jpg" />
+    <Content Include="assets\img\team\team1.jpg" />
+    <Content Include="assets\img\team\team2.jpg" />
+    <Content Include="assets\img\travisadded\aidsmem.jpeg" />
+    <Content Include="assets\img\travisadded\aidsmemfooter.jpeg" />
+    <Content Include="assets\img\travisadded\aidsmemheader.jpeg" />
+    <Content Include="assets\img\travisadded\beacon.PNG" />
+    <Content Include="assets\img\travisadded\businessplanheader.jpeg" />
+    <Content Include="assets\img\travisadded\centriq.jpg" />
+    <Content Include="assets\img\travisadded\centriqbarnhart.jpg" />
+    <Content Include="assets\img\travisadded\classroom.jpeg" />
+    <Content Include="assets\img\travisadded\classroombig.jpeg" />
+    <Content Include="assets\img\travisadded\coder.jpeg" />
+    <Content Include="assets\img\travisadded\dots.jpg" />
+    <Content Include="assets\img\travisadded\eqks.png" />
+    <Content Include="assets\img\travisadded\facebook.png" />
+    <Content Include="assets\img\travisadded\gen1.PNG" />
+    <Content Include="assets\img\travisadded\gen2.PNG" />
+    <Content Include="assets\img\travisadded\gen3.PNG" />
+    <Content Include="assets\img\travisadded\gen4.PNG" />
+    <Content Include="assets\img\travisadded\gen5.PNG" />
+    <Content Include="assets\img\travisadded\gentrain.jpeg" />
+    <Content Include="assets\img\travisadded\gentrainfoot.jpeg" />
+    <Content Include="assets\img\travisadded\global.jpeg" />
+    <Content Include="assets\img\travisadded\globalfooter.jpeg" />
+    <Content Include="assets\img\travisadded\globalheader.jpeg" />
+    <Content Include="assets\img\travisadded\graduation.jpeg" />
+    <Content Include="assets\img\travisadded\grantprop.jpeg" />
+    <Content Include="assets\img\travisadded\grantpropfooter.jpeg" />
+    <Content Include="assets\img\travisadded\grantpropheader.jpeg" />
+    <Content Include="assets\img\travisadded\gsp.png" />
+    <Content Include="assets\img\travisadded\hallway.jpeg" />
+    <Content Include="assets\img\travisadded\happy.jpeg" />
+    <Content Include="assets\img\travisadded\helping.jpeg" />
+    <Content Include="assets\img\travisadded\hexa.jpg" />
+    <Content Include="assets\img\travisadded\hiv.jpg" />
+    <Content Include="assets\img\travisadded\hivcompfooter.jpeg" />
+    <Content Include="assets\img\travisadded\hivcompheader.jpeg" />
+    <Content Include="assets\img\travisadded\hivcompplan.jpg" />
+    <Content Include="assets\img\travisadded\hivplan.jpeg" />
+    <Content Include="assets\img\travisadded\hivplanfooter.jpeg" />
+    <Content Include="assets\img\travisadded\hivplanheader.jpeg" />
+    <Content Include="assets\img\travisadded\hivstd.jpeg" />
+    <Content Include="assets\img\travisadded\hivstdfooter.jpeg" />
+    <Content Include="assets\img\travisadded\hivstdprevheader.jpeg" />
+    <Content Include="assets\img\travisadded\kacha.jpeg" />
+    <Content Include="assets\img\travisadded\kachafooter.jpeg" />
+    <Content Include="assets\img\travisadded\kachaheader.jpeg" />
+    <Content Include="assets\img\travisadded\kccare.jpg" />
+    <Content Include="assets\img\travisadded\kcmo.png" />
+    <Content Include="assets\img\travisadded\kcsl.jpg" />
+    <Content Include="assets\img\travisadded\kdhe.jpg" />
+    <Content Include="assets\img\travisadded\kdhelg.jpg" />
+    <Content Include="assets\img\travisadded\kindergarten.jpg" />
+    <Content Include="assets\img\travisadded\knitting.jpeg" />
+    <Content Include="assets\img\travisadded\linkedin.png" />
+    <Content Include="assets\img\travisadded\mafb.png" />
+    <Content Include="assets\img\travisadded\mapp.jpeg" />
+    <Content Include="assets\img\travisadded\mappfooter.jpeg" />
+    <Content Include="assets\img\travisadded\mappheader.jpeg" />
+    <Content Include="assets\img\travisadded\massage.jpeg" />
+    <Content Include="assets\img\travisadded\massageplan.jpeg" />
+    <Content Include="assets\img\travisadded\massagesmall.jpeg" />
+    <Content Include="assets\img\travisadded\massbusfooter.jpeg" />
+    <Content Include="assets\img\travisadded\massbusheader.jpeg" />
+    <Content Include="assets\img\travisadded\mcc.jpg" />
+    <Content Include="assets\img\travisadded\msmguide.jpeg" />
+    <Content Include="assets\img\travisadded\msmguidefooter.png" />
+    <Content Include="assets\img\travisadded\msmguideheader.jpg" />
+    <Content Include="assets\img\travisadded\naswlogo.gif" />
+    <Content Include="assets\img\travisadded\pinkcomment.jpg" />
+    <Content Include="assets\img\travisadded\plan.jpeg" />
+    <Content Include="assets\img\travisadded\plants.jpg" />
+    <Content Include="assets\img\travisadded\pp.jpg" />
+    <Content Include="assets\img\travisadded\ppconf.jpeg" />
+    <Content Include="assets\img\travisadded\ppconf.jpg" />
+    <Content Include="assets\img\travisadded\ppconffooter.jpeg" />
+    <Content Include="assets\img\travisadded\ppconfheader.jpeg" />
+    <Content Include="assets\img\travisadded\prep1.PNG" />
+    <Content Include="assets\img\travisadded\prep2.PNG" />
+    <Content Include="assets\img\travisadded\prep3.PNG" />
+    <Content Include="assets\img\travisadded\prep4.PNG" />
+    <Content Include="assets\img\travisadded\prep5.PNG" />
+    <Content Include="assets\img\travisadded\prepguys.jpeg" />
+    <Content Include="assets\img\travisadded\prepguys2.jpeg" />
+    <Content Include="assets\img\travisadded\prepopp.jpeg" />
+    <Content Include="assets\img\travisadded\prepoppfooter.jpeg" />
+    <Content Include="assets\img\travisadded\prepoppheader.jpeg" />
+    <Content Include="assets\img\travisadded\prepsite.PNG" />
+    <Content Include="assets\img\travisadded\preventiontools.PNG" />
+    <Content Include="assets\img\travisadded\project.jpeg" />
+    <Content Include="assets\img\travisadded\rainbowrev.jpeg" />
+    <Content Include="assets\img\travisadded\rainbowrevfooter.jpeg" />
+    <Content Include="assets\img\travisadded\rainbowrevheader.jpeg" />
+    <Content Include="assets\img\travisadded\ribbon.jpg" />
+    <Content Include="assets\img\travisadded\roots.jpg" />
+    <Content Include="assets\img\travisadded\ruralmsm.jpeg" />
+    <Content Include="assets\img\travisadded\ruralmsmfooter.jpeg" />
+    <Content Include="assets\img\travisadded\ruralmsmheader.jpeg" />
+    <Content Include="assets\img\travisadded\senatefooter.jpeg" />
+    <Content Include="assets\img\travisadded\senateheader.jpeg" />
+    <Content Include="assets\img\travisadded\senatetestimony.jpeg" />
+    <Content Include="assets\img\travisadded\sexed.jpeg" />
+    <Content Include="assets\img\travisadded\sexedfooter.jpeg" />
+    <Content Include="assets\img\travisadded\sexedheader.jpeg" />
+    <Content Include="assets\img\travisadded\sexhealth.jpeg" />
+    <Content Include="assets\img\travisadded\sexhealthfooter.jpeg" />
+    <Content Include="assets\img\travisadded\sexhealthheader.jpeg" />
+    <Content Include="assets\img\travisadded\skills.jpeg" />
+    <Content Include="assets\img\travisadded\socdet.jpeg" />
+    <Content Include="assets\img\travisadded\socdetfooter.jpg" />
+    <Content Include="assets\img\travisadded\socdetheader.jpeg" />
+    <Content Include="assets\img\travisadded\stey.jpeg" />
+    <Content Include="assets\img\travisadded\stey1.PNG" />
+    <Content Include="assets\img\travisadded\stey2.PNG" />
+    <Content Include="assets\img\travisadded\stey3.PNG" />
+    <Content Include="assets\img\travisadded\stey4.PNG" />
+    <Content Include="assets\img\travisadded\stey5.PNG" />
+    <Content Include="assets\img\travisadded\steyyouth.jpeg" />
+    <Content Include="assets\img\travisadded\supplies.jpeg" />
+    <Content Include="assets\img\travisadded\swope.jpg" />
+    <Content Include="assets\img\travisadded\synergy.jpg" />
+    <Content Include="assets\img\travisadded\tb1.PNG" />
+    <Content Include="assets\img\travisadded\tb2.PNG" />
+    <Content Include="assets\img\travisadded\tb3.PNG" />
+    <Content Include="assets\img\travisadded\tb4.PNG" />
+    <Content Include="assets\img\travisadded\tb5.PNG" />
+    <Content Include="assets\img\travisadded\testingfooter.jpeg" />
+    <Content Include="assets\img\travisadded\testingheader.jpeg" />
+    <Content Include="assets\img\travisadded\thumbs.jpeg" />
+    <Content Include="assets\img\travisadded\thumbsup.jpeg" />
+    <Content Include="assets\img\travisadded\tlp.jpeg" />
+    <Content Include="assets\img\travisadded\tlpfooter.jpeg" />
+    <Content Include="assets\img\travisadded\tlpheader.jpeg" />
+    <Content Include="assets\img\travisadded\topdisc.jpeg" />
+    <Content Include="assets\img\travisadded\topdiscfooter.jpeg" />
+    <Content Include="assets\img\travisadded\topdischeader.jpeg" />
+    <Content Include="assets\img\travisadded\treepath.jpg" />
+    <Content Include="assets\img\travisadded\up.jpg" />
+    <Content Include="assets\img\travisadded\washburn.jpg" />
+    <Content Include="assets\img\travisadded\wellspring.jpeg" />
+    <Content Include="assets\img\travisadded\wellspring.jpg" />
+    <Content Include="assets\img\travisadded\whitebrick.jpg" />
+    <Content Include="assets\img\travisadded\workheader.jpeg" />
+    <Content Include="assets\img\travisadded\working.jpeg" />
+    <Content Include="assets\img\travisadded\workingheader.jpg" />
+    <Content Include="assets\img\travisadded\worthit.jpg" />
+    <Content Include="assets\img\travisadded\zip.png" />
+    <Content Include="assets\img\widget\widget1.jpg" />
+    <Content Include="assets\img\widget\widget10.jpg" />
+    <Content Include="assets\img\widget\widget2.jpg" />
+    <Content Include="assets\img\widget\widget3.jpg" />
+    <Content Include="assets\img\widget\widget4.jpg" />
+    <Content Include="assets\img\widget\widget5.jpg" />
+    <Content Include="assets\img\widget\widget6.jpg" />
+    <Content Include="assets\img\widget\widget7.jpg" />
+    <Content Include="assets\img\widget\widget8.jpg" />
+    <Content Include="assets\img\widget\widget9.jpg" />
+    <Content Include="assets\img\world-map.png" />
+    <Content Include="assets\js\bigvideo.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\init.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\plugins.js" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\PersonalProject2019.dll" />
+    <Content Include="bin\PersonalProject2019.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="businessplan.html" />
+    <Content Include="centriqbarnhart.html" />
+    <Content Include="drag.png" />
+    <Content Include="education.html" />
+    <Content Include="engagingmsmslides.html" />
+    <Content Include="gentraining.html" />
+    <Content Include="globalslides.html" />
+    <Content Include="grantproposal.html" />
+    <Content Include="hivcompplan.html" />
+    <Content Include="hivplan.html" />
+    <Content Include="hivstdslides.html" />
+    <Content Include="hivtesting.html" />
+    <Content Include="isometric-ipad-white.png" />
+    <Content Include="kachanastadslides.html" />
+    <Content Include="large_logo.png" />
+    <Content Include="loading.GIF" />
+    <Content Include="map-image.png" />
+    <Content Include="mappconference.html" />
+    <Content Include="marker.GIF" />
+    <Content Include="marker.png" />
+    <Content Include="msmguide.html" />
+    <Content Include="obj\Debug\PersonalProject2019.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PersonalProject2019.dll" />
+    <Content Include="obj\Debug\PersonalProject2019.pdb" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="portfolio-masonry.html" />
+    <Content Include="portfolio.html" />
+    <Content Include="ppgpconf.html" />
+    <Content Include="prepnow.html" />
+    <Content Include="prepoppsslides.html" />
+    <Content Include="rainbowconcert.html" />
+    <Content Include="senatetestimony.html" />
+    <Content Include="sexedconf.html" />
+    <Content Include="sexhealthslides.html" />
+    <Content Include="socialdetslides.html" />
+    <Content Include="stey.html" />
+    <Content Include="tlphandbook.html" />
+    <Content Include="topekadiscrimination.html" />
+    <Content Include="work.html" />
+    <Content Include="world-map.png" />
+    <Content Include="assets\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.1.0\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\core.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\icons.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\larger.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\list.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\path.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\spinning.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.1.0\less\variables.less" />
+    <Content Include="assets\font-awesome-4.1.0\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_spinning.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.1.0\scss\_variables.scss" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="assets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\PersonalProject2019.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\PersonalProject2019.csprojResolveAssemblyReference.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="reviews.html" />
+    <Content Include="easyshare.php" />
+    <Content Include="index.html" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53270</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53270/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

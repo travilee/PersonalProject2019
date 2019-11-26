@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travis Barnhart - social worker, massage therapist, coder, instructor">
+    <meta name="author" content="Travis Barnhart">
+    <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+    <!--<link rel="apple-touch-icon" sizes="144x144" href="assets/img/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="assets/img/ico/apple-touch-icon-57x57.png">-->
+    <title>Travis Barnhart</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/plugins.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+</head>
+<body id="page-top" class="animated-navigation">
+
+    <div class="master-wrapper">
+        <div class="preloader">
+            <div class="preloader-img">
+                <span class="loading-animation animate-flicker"><img src="assets/img/loading.GIF" alt="loading" /></span>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.2s">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand smoothie" href="index.html">TRAVIS <span class="theme-accent-color">BARNHART</span></a>
+                </div>
+                <div id="navbar-social">
+                    <ul class="smoothie list-inline social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/travisleebarnhart/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.hackerrank.com/travilee" target="_blank" title="HackerRank"><i class="fab fa-hackerrank fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/travilee" target="_blank" title="GitHub Repositories"><i class="fab fa-github fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Experience <span class="pe-7s-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="education.html">Education &amp; Training</a></li>
+                                <li><a href="work.html">Work &amp; Volunteer</a></li>
+                                <!--<li><a href="#">Skills &amp; Technologies</a></li>-->
+                                <li><a href="reviews.html">Recommendations &amp; Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="portfolio.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Projects <span class="pe-7s-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="portfolio.html">Coding Projects</a></li>
+                                <li><a href="portfolio.html">Conferences</a></li>
+                                <li><a href="portfolio.html">Presentations</a></li>
+                                <li><a href="portfolio.html">Professional Writing</a></li>
+                                <li><a href="portfolio.html">Miscellaneous Projects</a></li>
+                            </ul>
+                        </li>
+                        <!--<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Interests <span class="pe-7s-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Massage Therapy</a></li>
+                                <li><a href="#">Genealogy</a></li>
+                                <li><a href="#">Knitting &amp; Crochet</a></li>
+                            </ul>
+                        </li>-->
+                        <!--<li><a href="#search"><i class="pe-7s-search"></i></a></li>-->
+                        <li id="menu-trigger-wrapper">
+                            <div class="pull-right">
+                                <button type="button" id="menu-toggle" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+                                    <span class="tcon-menu__lines" aria-hidden="true"></span>
+                                    <span class="tcon-visuallyhidden">toggle menu</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div id="search-wrapper">
+            <button type="button" class="close">×</button>
+            <form>
+                <input type="search" value="" placeholder="Enter Search Term" />
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+        <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="assets/img/travisadded/up.jpg" data-speed="0.8">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mt30 text-center wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="section-heading">Travis <span class="theme-accent-color">Barnhart</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header -->
+        <!--<header id="headerwrap" class="backstretched fullheight">
+            <div class="vertical-center">
+                <div class="col-sm-1 pull-left text-center slider-control match-height">
+                    <a href="#" class="prev-bs-slide vertical-center wow fadeInLeft" data-wow-delay="0.8s"><i class="fas fa-long-arrow-alt-left"></i></a>
+                </div>
+                <div class="intro-text text-center smoothie col-sm-10 match-height">
+                    <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.8s"><span class="theme-accent-color">TRAVIS</span> BARNHART</div>
+                </div>
+                <div class="col-sm-1 pull-right text-center slider-control match-height">
+                    <a href="#" class="next-bs-slide vertical-center wow fadeInRight" data-wow-delay="0.8s"><i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+            <div class="header-scroll-wrapper">
+                <a href="#welcome" class="mouse page-scroll wow fadeInDown" data-wow-delay="0.8s"><div class="wheel"></div></a>
+            </div>
+        </header>-->
+        <!-- Welcome section -->
+        <section id="welcome">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb100">
+                            <h3 class="section-subheading secondary-font">the noblest pleasure is the joy of understanding. - Leonardo da Vinci</h3>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="col-md-3">
+                            <h2 class="mb50">About <span class="theme-accent-color">Travis</span></h2>
+                            <p class="lead">In my early 20's, I read the book <i>How to Think Like Leonardo da Vinci.</i> From then on, I adopted a life focus of proudly exploring many different interests.</p>
+                            <p>That approach has led to a diverse career in social work, massage therapy, coding, teaching, and customer service, as well as the exploration of a variety personal interests.</p>
+                            <p class="mt30"><a href="#message" class="btn btn-primary btn-theme page-scroll">Get In Touch</a></p>
+                        </div>
+                        <div class="col-md-8 col-md-offset-1">
+                            <div class="row">
+                                <!-- 1 Work & Volunteer Experience -->
+                                <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height mb30">
+                                        <a href="work.html">
+                                            <i class="far fa-building fa-3x"></i>
+                                            <div class="content-area">
+                                                <h3 class="title">Work &amp; Volunteer Experience</h3>
+                                                <p>Social worker, application developer, massage therapist, educator, community advocate. Well-rounded mix of skills and experiences.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- 2 Education & Training -->
+                                <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height mb30">
+                                        <a href="education.html">
+                                            <i class="fas fa-graduation-cap fa-3x"></i>
+                                            <div class="content-area">
+                                                <h3 class="title">Education &amp; Training</h3>
+                                                <p>A bachelor's degree in social work. Certificates in Full Stack Web Development and Massage Therapy. College course work in computer science.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- 3 Portfolio -->
+                                <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height mb30">
+                                        <a href="portfolio.html">
+                                            <i class="far fa-paper-plane fa-3x"></i>
+                                            <div class="content-area">
+                                                <h3 class="title">Project Portfolio</h3>
+                                                <p>Web applications and websites. Conference workshops and presentations. Professional writing and project coordination.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- 4 Recommendations & Reviews -->
+                                <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height">
+                                        <a href="reviews.html">
+                                            <i class="fas fa-users fa-3x"></i>
+                                            <div class="content-area">
+                                                <h3 class="title">Recommendations &amp; Reviews</h3>
+                                                <p>Reviews from supervisors, coworkers, supervised staff, and student interns. See what people think about working with Travis.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Skills & Technologies -->
+                                <!--<div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height mb30">
+                                        <i class="fas fa-laptop-code fa-3x"></i>
+                                        <div class="content-area">
+                                            <h3 class="title">Skills &amp; Technologies</h3>
+                                            <div class="content">A coder who can also talk to people. From programming languages to public speaking and many other skills in between.</div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!-- Massage Therapy -->
+                                <!--<div class="col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="icon-box-1 match-height">
+                                        <i class="fas fa-hands fa-3x"></i>
+                                        <div class="content-area">
+                                            <h3 class="title">Massage Therapy</h3>
+                                            <div class="content">Friendly neighbors there that's where we meet. Can you tell me how to get how to get to Sesame Street. He's gainin' on you so you better look alive..</div>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations & Reviews -->
+        <section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="assets/img/travisadded/plants.jpg" data-speed="0.8">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb100">
+                            <a href="reviews.html">
+                                <h2 class="section-heading">Recommendations &amp; <span class="theme-accent-color">Reviews</span></h2>
+                            </a>
+                            <!--<hr class="thin-hr">
+                            <h3 class="section-subheading secondary-font">i love those who can smile in trouble,<br />who can gather strength from distress,<br />and grow brave by reflection.<br />- leonardo da vinci</h3>-->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="1" data-items-desktop="[1200,1]" data-items-desktop-small="[980,1]" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
+                                <!-- kate -->
+                                <li>
+                                    <a href="reviews.html#kate">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>He is personable, yet professional, and I would without hesitation trust any advice or guidance he gave me. Travis earns the respect of everyone he works with by being knowledgeable, considerate, skilled, and passionate.</p>
+                                                    <h4>Kate Moneymaker-Barker, Good Samaritan Project</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- amber -->
+                                <li>
+                                    <a href="reviews.html#amber">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>Travis has great initiative and is goal and client focused. You can expect attention to detail, always keeping the "why" and "vision" at the center of his work. Travis is a problem solver - he asks complicated questions in order to improve processes and ensure process improvement.</p>
+                                                    <h4>Amber Cansler, KC CARE Health Center</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- anita -->
+                                <li>
+                                    <a href="reviews.html#anita">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>Travis took his responsibilities to the community very seriously and brought new ideas to the table. Travis was well informed and continually seeking new avenues to gain more knowledge. He showed the utmost integrity in all his projects and duties.</p>
+                                                    <h4>Anita Roman-Garcia, Planned Parenthood</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- stephanie -->
+                                <li>
+                                    <a href="reviews.html#stephanie">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>He has worked tirelessly and passionately in the field of Public Health and has always presented himself as knowledgeable, ethical, approachable and always practicing cultural humility. His accessible yet assertive demeanor equips him with the social presence to navigate gracefully amongst his peers, superiors and clientele.</p>
+                                                    <h4>Stephanie Washington, Missouri Comprehensive Prevention Planning Group</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- becca -->
+                                <li>
+                                    <a href="reviews.html#becca">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>He is kind, sweet, funny, and incredibly smart. Travis was always willing to lend me a listening ear or thoughtful social work or tech advice when I needed it. He is also very hard working and puts thought into everything he does.</p>
+                                                    <h4>Rebecca Stern, Good Samaritan Project</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- chuck -->
+                                <li>
+                                    <a href="reviews.html#chuck">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>I would highly recommend Travis based on his ability to think globally about problems and solutions but also to pay attention to detail. He is thoughtful and intentional, honest and has a clear vision of boundaries and ethics.</p>
+                                                    <h4>Chuck Franks, Good Samaritan Project</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- david -->
+                                <li>
+                                    <a href="reviews.html#david">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/linkedin.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>Travis was always willing to do whatever needed to be done, and got along well with not only his staff, but the other managers and staff as well. He earned the respect of his staff, co-workers, and his peers in other agencies as well.</p>
+                                                    <h4>David Schlomer, Good Samaritan Project</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- bri -->
+                                <li>
+                                    <a href="reviews.html#bri">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                                <div class="col-sm-2">
+                                                    <img src="assets/img/travisadded/zip.png" class="img-responsive testimonial-author" alt="">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p>He is very smart and quick to solve problems and always looking for solutions to make things run more efficiently. Not only that, Travis is one of the most kind and helpful people I have ever known. He has a gift for bringing people together and making them care, and for that reason, he is invaluable on a team.</p>
+                                                    <h4>Bri McClernon, Good Samaritan Project</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="silver-bg">
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb100">
+                            <h2 class="section-heading">Exp<span class="theme-accent-color">erie</span>nce</h2>
+                            <hr class="thin-hr">
+                            <h3 class="section-subheading secondary-font">Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="wow fadeIn" data-wow-delay="0.2s">
+                            <ul class="portfolio-items nopadding-lr isotope list-unstyled">
+
+                                <!-- Education & Training -->
+                                <li class="col-sm-4 portfolio-item isotope-item">
+                                    <div class="nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/classroom.jpeg" class="img-responsive smoothie" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="education.html" title="View Page">Education &amp; Training</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="education.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Work & Volunteer -->
+                                <li class="col-sm-4 portfolio-item isotope-item">
+                                    <div class="nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/working.jpeg" class="img-responsive smoothie" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="work.html" title="View Page">Work &amp; Volunteer</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="work.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Recommendations & Reviews -->
+                                <li class="col-sm-4 portfolio-item isotope-item">
+                                    <div class="nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/thumbsup.jpeg" class="img-responsive smoothie" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="reviews.html" title="View Page">Recommendations<br />&amp; Reviews</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="reviews.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section>
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center mb100">
+                            <a href="portfolio.html">
+                                <h2 class="section-heading">Portfolio <span class="theme-accent-color">Projects</span></h2>
+                            </a>
+                            <hr class="thin-hr">
+                            <h3 class="section-subheading secondary-font">you can have no dominion greater or less than that over yourself. - leonardo da vinci</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="wow fadeIn" data-wow-delay="0.2s">
+                            <ul class="portfolio-filter mb30 text-center list-inline wow fadeIn" data-wow-delay="0.2s">
+                                <li><a class="btn btn-primary btn-transparent active" href="#" data-filter="*">All</a></li>
+                                <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".apps">Coding</a></li>
+                                <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".conferences">Conferences</a></li>
+                                <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".presentations">Presentations</a></li>
+                                <li><a class="btn btn-primary btn-transparent" href="#" data-filter=".writing">Writing</a></li>
+                            </ul>
+                            <ul class="portfolio-items nopadding-lr isotope list-unstyled">
+
+                                <!-- Genealogy Training -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item apps isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/gentrain.jpeg" class="img-responsive smoothie" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="gentraining.html" title="view project">Genealogy Training Project</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="gentraining.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Personal Site -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item apps isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/centriqbarnhart.jpg" class="img-responsive smoothie" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="centriqbarnhart.html" title="view project">Personal Site 1.0</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="centriqbarnhart.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Get PrEP Now -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item apps isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/prepguys.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="prepnow.html" title="view project">Get PrEP Now</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="prepnow.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- PP Conference -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item conferences isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/ppconf.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="ppgpconf.html" title="view project">Planned Parenthood Conference</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="ppgpconf.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Sex Ed Conferences -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item conferences isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/sexed.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="sexedconf.html" title="view project">Sex Education Conferences</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="sexedconf.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Sexual Health -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item conferences isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/sexhealth.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="sexhealthslides.html" title="view project">Sexual Health Presentation</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="sexhealthslides.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- HIV & STI Prevention -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item presentations isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/hivstd.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="hivstdslides.html" title="view project">HIV &amp; STD Prevention</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="hivstdslides.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Rural MSM -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item presentations isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/ruralmsm.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="engagingmsmslides.html" title="view project">Rural MSM &amp; HIV Prevention</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="engagingmsmslides.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Hookup Apps -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item presentations isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/msmguide.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="msmguide.html" title="view project">MSM Hookup Apps Guide</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="msmguide.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Jurisdictional Plan -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item writing isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/hivplan.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="hivplan.html" title="view project">Jurisdictional HIV Plan</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="hivplan.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- TLP Youth Handbook -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item writing isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/tlp.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="tlphandbook.html" title="view project">TLP Youth Handbook</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="tlphandbook.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Massage Business Plan -->
+                                <li class="col-sm-4 col-sm-6 portfolio-item writing isotope-item">
+                                    <div class="col-sm-12 nopadding-lr hover-item">
+                                        <img src="assets/img/travisadded/massageplan.jpeg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.2s" alt="">
+                                        <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.2s">
+                                            <h3 class="vertical-center smoothie"><a href="businessplan.html" title="view project">Massage Business Plan</a></h3>
+                                        </div>
+                                        <div class="hover-item-caption smoothie">
+                                            <div class="vertical-center smoothie">
+                                                <a href="businessplan.html" class="smoothie btn btn-primary btn-white page-scroll">View</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="opaqued light-opaqued parallax" data-parallax="scroll" data-image-src="assets/img/travisadded/whitebrick.jpg" data-speed="0.8">
+            <div class="section-inner">
+                <div class="container" id="message">
+                    <h2>Contact Travis</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="tel:913-314-1322">
+                                <h3>Call Travis</h3>
+                                <p>913-314-1322</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="mailto:travisleebarnhart@gmail.com">
+                                <h3>Email Travis</h3>
+                                <p>travisleebarnhart@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<div id="message"></div>
+                        <form method="post" action="sendemail.php" id="contactform" class="main-contact-form wow fadeIn" data-wow-delay="0.2s">
+                            <input type="text" class="form-control col-md-4" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." />
+                            <input type="text" class="form-control col-md-4" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." />
+                            <input type="text" class="form-control col-md-4" name="website" placeholder="Your URL *" id="website" required data-validation-required-message="Please enter your web address." />
+                            <textarea name="comments" class="form-control" id="comments" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                            <input class="btn btn-primary mt30 pull-right" type="submit" name="submit" value="Submit" />
+                        </form>-->
+        <!--<section>
+            <div id="mapwrapper"></div>
+        </section>-->
+        <footer class="white-wrapper dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="assets/img/travisadded/kindergarten.jpg" data-speed="0.8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="list-inline social-links wow fadeIn" data-wow-delay="0.2s">
+                            <li>
+                                <a href="https://www.linkedin.com/in/travisleebarnhart" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.hackerrank.com/travilee" target="_blank" title="HackerRank"><i class="fab fa-hackerrank fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/travilee" target="_blank" title="GitHub Repositories"><i class="fab fa-github fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="thin-hr" />
+                    <div class="col-md-12 text-center wow fadeIn" data-wow-delay="0.2s">
+                        <span class="copyright">Copyright 2019<br />Designed by DISTINCTIVE THEMES<br />Customized by Travis Barnhart</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="bottom-frame"></div>
+        <a href="#" id="back-to-top"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/init.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            jQuery('#headerwrap').backstretch([
+              "assets/img/travisadded/coder.jpeg",
+              "assets/img/travisadded/massage.jpeg",
+              "assets/img/travisadded/helping.jpeg",
+                "assets/img/travisadded/knitting.jpeg"
+            ], { duration: 8000, fade: 500 });
+        });
+    </script>
+</body>
+</html>
